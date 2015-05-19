@@ -1,4 +1,4 @@
-NAME = emanueleperuffo/postgres
+NAME = emanueleperuffo/postgis
 VERSION = 1
 
 .PHONY: all build test release
