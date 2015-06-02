@@ -1,10 +1,8 @@
-FROM emanueleperuffo/postgres
+FROM emanueleperuffo/postgres:latest
 MAINTAINER Emanuele Peruffo <info@emanueleperuffo.com>
 
 ENV HOME /root
 ADD . /build
-
-ENV POSTGIS_VERSION 2.1
 
 RUN /build/prepare.sh && \
 	/build/services.sh && \
